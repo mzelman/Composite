@@ -28,9 +28,8 @@ public class Wall implements Structure {
         return blocks.stream().mapToInt((block) -> countRecursive(block)).sum();
     }
 
-    public boolean addBlock(Block block) {
+    public void addBlock(Block block) {
         blocks.add(block);
-        return true;
     }
 
     private Optional<Block> findBlockByColorRecursive(Block block, String color) {
