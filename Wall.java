@@ -6,7 +6,7 @@ import java.util.Optional;
 
 public class Wall implements Structure {
 
-    private List<Block> blocks = new ArrayList<Block>();
+    private List<Block> blocks = new ArrayList<>();
 
     @Override
     public Optional<Block> findBlockByColor(String color) {
